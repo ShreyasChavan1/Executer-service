@@ -1,0 +1,16 @@
+version: '3.9'
+volumes:
+    judge_temp_data:
+services:
+    executer:
+        build: 
+            context: .
+            dockerfile: Dockerfile.executer
+        container_name: executer_container
+        restart: always
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - judge_temp_data:/judge_work_dir
+        ports:
+            - "5000:5000"     
+        

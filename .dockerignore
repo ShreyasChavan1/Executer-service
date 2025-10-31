@@ -1,0 +1,12 @@
+# Ignore frontend (not needed in backend container)
+
+
+# Ignore dependencies (they get installed fresh in container
+Executer/node_modules/
+
+
+# Ignore Git
+.git
+.gitignore
+
+
