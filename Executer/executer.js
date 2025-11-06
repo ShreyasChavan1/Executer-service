@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.get("/",async(req,res)=>{
     console.log("hello api working correctly");
-}
+})
 app.post("/run",async(req,res)=>{
     const {code,language,prob,subID} = req.body;
     try{
