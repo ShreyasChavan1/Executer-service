@@ -1,6 +1,7 @@
 version: '3.9'
 volumes:
-    judge_temp_data:
+  judge_temp_data:
+    name: judge_temp_data
 services:
     executer:
         build: 
