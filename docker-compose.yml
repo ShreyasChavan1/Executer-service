@@ -8,6 +8,8 @@ services:
             dockerfile: Dockerfile.executer
         container_name: executer_container
         restart: always
+        env_file:
+          - .env
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
             - judge_temp_data:/judge_work_dir
